@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+	<form method="POST" action="/users/signup/"> {% csrf_token %}
+		<input type="text" placeholder="First Name" name="fname"></input><br/>
+		<input type="text" placeholder="Last Name" name="lname"></input><br/>
+		<input type="email" placeholder="Email" name="email"></input><br/><br/>
+		<input type="submit" value="Signup"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+	<form method="POST" action="/users/set_pwd/{{temp_code}}"> {% csrf_token %}
+		<input type="password" placeholder="Password" name="pwd"></input><br/>
+		<input type="submit" value="Set Password"/>
+	</form>
+</body>
+</html>

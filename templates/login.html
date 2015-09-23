@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body>
+	<form method="POST" action="/users/login/"> {% csrf_token %}
+		<input type="email" placeholder="Email" name="email"></input><br/><br/>
+		<input type="password" placeholder="Password" name="pwd"></input><br/>
+		
+		<input type="submit" value="Login"/>
+	</form>
+</body>
+</html>
